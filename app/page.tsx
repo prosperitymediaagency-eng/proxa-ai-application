@@ -9,7 +9,7 @@ import {
 
 export default function LandingPage() {
   return (
-    <div className="min-h-screen bg-soft"></div>
+    <div className="min-h-screen bg-soft">
       {/* Navbar */}
       <nav className="sticky top-0 z-50 bg-white/80 backdrop-blur-md border-b border-gray-100">
         <div className="max-w-6xl mx-auto px-4 sm:px-6 py-4 flex items-center justify-between">
@@ -57,4 +57,67 @@ export default function LandingPage() {
 
       {/* Features */}
       <section id="features" className="max-w-6xl mx-auto px-4 sm:px-6 py-20">
-        <div className="text-center mb-
+        <div className="text-center mb-16">
+          <h2 className="text-3xl sm:text-4xl font-extrabold text-dark tracking-tight">
+            Everything you need to stay on-brand
+          </h2>
+          <p className="mt-4 text-lg text-slate max-w-2xl mx-auto">
+            From planning to publishing, Proxa AI keeps your content consistent and on schedule.
+          </p>
+        </div>
+
+        <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-8">
+          <div className="bg-white rounded-2xl border border-gray-100 shadow-sm p-8">
+            <div className="w-12 h-12 rounded-xl bg-teal/10 flex items-center justify-center mb-5">
+              <Brain className="w-6 h-6 text-teal" />
+            </div>
+            <h3 className="text-lg font-bold text-dark mb-2">AI content generation</h3>
+            <p className="text-slate">
+              Generate on-brand captions, ideas, and post copy in seconds, tuned to your voice.
+            </p>
+          </div>
+
+          <div className="bg-white rounded-2xl border border-gray-100 shadow-sm p-8">
+            <div className="w-12 h-12 rounded-xl bg-purple/10 flex items-center justify-center mb-5">
+              <Calendar className="w-6 h-6 text-purple" />
+            </div>
+            <h3 className="text-lg font-bold text-dark mb-2">Visual content calendar</h3>
+            <p className="text-slate">
+              Plan and schedule weeks of posts at a glance, across every platform you manage.
+            </p>
+          </div>
+
+          <div className="bg-white rounded-2xl border border-gray-100 shadow-sm p-8">
+            <div className="w-12 h-12 rounded-xl bg-teal/10 flex items-center justify-center mb-5">
+              <LayoutDashboard className="w-6 h-6 text-teal" />
+            </div>
+            <h3 className="text-lg font-bold text-dark mb-2">One dashboard, every brand</h3>
+            <p className="text-slate">
+              Switch between client brands and accounts without losing your place.
+            </p>
+          </div>
+        </div>
+      </section>
+
+      {/* Footer CTA */}
+      <section className="max-w-6xl mx-auto px-4 sm:px-6 pb-24 text-center">
+        <div className="bg-purple rounded-3xl px-8 py-16">
+          <h2 className="text-3xl sm:text-4xl font-extrabold text-white tracking-tight">
+            Ready to plan your next post?
+          </h2>
+          <p className="mt-4 text-lg text-white/80 max-w-xl mx-auto">
+            Join social media managers already saving hours every week with Proxa AI.
+          </p>
+          <Link
+            href="/signup"
+            className="mt-8 inline-flex items-center gap-2 bg-teal hover:bg-teal-600 text-white font-semibold px-8 py-3.5 rounded-xl transition shadow-lg"
+          >
+            Start Free
+            <ArrowRight className="w-5 h-5" />
+          </Link>
+        </div>
+      </section>
+    </div>
+  );
+            }
+            
