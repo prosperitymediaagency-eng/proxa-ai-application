@@ -9,7 +9,7 @@ import {
 
 export default function LandingPage() {
   return (
-    <div className="min-h-screen bg-soft">
+    <div className="min-h-screen bg-soft"></div>
       {/* Navbar */}
       <nav className="sticky top-0 z-50 bg-white/80 backdrop-blur-md border-b border-gray-100">
         <div className="max-w-6xl mx-auto px-4 sm:px-6 py-4 flex items-center justify-between">
